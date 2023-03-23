@@ -1,0 +1,691 @@
+#intro {
+  background-image: url(images/Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  height: 100vh;
+  position: relative;
+  padding: 0 50px;
+}
+.line {
+  margin-bottom: 0;
+  margin-top: 0;
+  height: initial;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.35;
+  top: 0;
+  left: 0;
+}
+
+.header {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu {
+  padding: 0 50px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  height: 0;
+  top: 0;
+  left: 0;
+  color: white;
+  z-index: 5;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+.menus {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menus a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.menus a:hover {
+  transition: 0.3s;
+  letter-spacing: 10px;
+  color: #391a09;
+}
+
+.menu .header {
+  position: absolute;
+  z-index: 6;
+  display: flex;
+  top: 6px;
+  left: 0;
+  padding: 0 64px;
+}
+
+.menu-btn {
+  width: 28px;
+  cursor: pointer;
+}
+
+#menu:checked + .menu {
+  height: 100vh;
+}
+
+.bnright {
+  position: relative;
+  margin-top: 10%;
+  text-align: end;
+}
+
+hr {
+  width: 50%;
+  margin-left: auto;
+  margin-right: 15px;
+  color: white;
+  width: 470px;
+  height: 10px;
+}
+
+.footer {
+  text-align: end;
+}
+
+.footer .sns {
+  text-align: start;
+  display: flex;
+  gap: 25px;
+  font-size: 23px;
+}
+
+.company {
+  color: blue;
+}
+
+#intro .sns {
+  display: flex;
+  width: 20px;
+  color: white;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.sns i:hover {
+  transition: 0.3s;
+  transform: translateX(5px);
+}
+ul {
+  list-style: none;
+  text-align: end;
+}
+
+.menus ul {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.05em;
+  font-family: "Montserrat";
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-networks {
+  display: flex;
+  gap: 20px;
+  font-size: 23px;
+}
+
+.social-networks > i {
+  cursor: pointer;
+}
+
+.social-networks > i:hover {
+  transition: 0.3s;
+  transform: translateY(-5px);
+}
+
+/* PROFILE PAGE */
+
+#profile {
+  position: relative;
+  padding: 0 50px;
+}
+
+#profile .header {
+  padding: 0px 26px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-left: 50px;
+}
+
+.profile > h3 {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-left: 50px;
+}
+
+.profile ul {
+  margin-left: 18px;
+}
+
+.profile li {
+  text-align: left;
+}
+.artist-image {
+  position: relative;
+  width: 400px;
+  height: 509px;
+}
+
+.image-shadow {
+  background-color: #391a09;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+}
+
+.artist-image > img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.main-content {
+  display: flex;
+  padding: 70px 100px;
+  gap: 50px;
+}
+
+.girl-list {
+  text-transform: uppercase;
+  width: 200px;
+}
+
+.girl-list li:hover {
+  letter-spacing: 2px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.footer-profile {
+  position: fixed;
+  bottom: 100px;
+}
+
+.footer-profile .sns {
+  display: flex;
+  flex-direction: column;
+}
+
+/* DISCOGRAPHY */
+
+.discography {
+  font-family: "Montserrat";
+  font-size: 40pt;
+  font-weight: bolder;
+  letter-spacing: 0.05em;
+}
+
+#disco {
+  position: relative;
+  padding: 0 50px;
+}
+
+.discography {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  padding: 100px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.album-cover img {
+  width: 100%;
+  height: 80%;
+}
+
+.footer-discography {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.sns-discography {
+  display: flex;
+  font-size: 22px;
+  gap: 20px;
+}
+
+.sns-discography i:hover {
+  transition: 0.3s;
+  transform: translateY(-5px);
+}
+
+/* GALLERY */
+
+#Gallery {
+  position: relative;
+  padding: 0 50px;
+}
+
+.Gallery-album {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 40pt;
+  font-weight: bolder;
+  letter-spacing: 0.05em;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+
+.image-container img {
+  height: 200px;
+}
+
+.footer-gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.sns-gallery {
+  display: flex;
+  font-size: 22px;
+  gap: 20px;
+}
+
+.sns-gallery i:hover {
+  transition: 0.3s;
+  transform: translateY(-5px);
+}
+
+/* VIDEO */
+
+#Video {
+  position: relative;
+  padding: 0 50px;
+}
+iframe {
+  width: 100%;
+  height: 80vh;
+}
+
+.Video-album {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 40pt;
+  font-weight: bolder;
+  letter-spacing: 0.05em;
+}
+
+.footer-video {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.footer-video > p {
+  font-size: 22px;
+}
+
+.sns-video {
+  display: flex;
+  font-size: 22px;
+  gap: 20px;
+}
+
+.sns-video i:hover {
+  transition: 0.3s;
+  transform: translateY(-5px);
+}
+
+/* NOTICE */
+#Notice {
+  position: relative;
+  padding: 0 50px;
+}
+
+.Notice {
+  font-family: "Montserrat";
+  font-size: 40pt;
+  font-weight: bolder;
+  letter-spacing: 0.05em;
+  text-align: left;
+  top: 10px;
+}
+
+.notice-table p {
+  text-align: center;
+}
+
+.today-events {
+  font-family: "Montserrat";
+  font-size: 20px;
+}
+
+.footer-notice {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.sns-notice {
+  display: flex;
+  font-size: 22px;
+  gap: 20px;
+}
+
+.sns-notice i:hover {
+  transition: 0.3s;
+  transform: translateY(-5px);
+}
+
+/* SCHEDULE */
+#Schedule {
+  position: relative;
+  padding: 0 50px;
+}
+
+.schedule-container {
+  display: flex;
+  justify-content: center;
+}
+
+.schedule {
+  text-align: left;
+  width: 50%;
+}
+
+.schedule h2 {
+  font-family: "Montserrat";
+  font-size: 40pt;
+  font-weight: bolder;
+  letter-spacing: 0.05em;
+  text-align: left;
+  top: 10px;
+}
+
+.top-line {
+  margin-left: 0;
+  margin-right: 15px;
+  color: black;
+  width: 470px;
+  height: 10px;
+}
+
+.calendar {
+  width: 50%;
+}
+
+.month {
+  font-family: "Montserrat";
+  font-size: 13pt;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 2px 0 0 0 #888, 0 2px 0 0 #888, 2px 2px 0 0 #888,
+    /* Just to fix the corner */ 2px 0 0 0 #888 inset, 0 2px 0 0 #888 inset;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.days > div {
+  text-align: center;
+  padding: 10px;
+  box-shadow: 2px 0 0 0 #888, 0 2px 0 0 #888, 2px 2px 0 0 #888,
+    /* Just to fix the corner */ 2px 0 0 0 #888 inset, 0 2px 0 0 #888 inset;
+}
+
+.days .color {
+  color: white;
+  height: 50px;
+  width: 50px;
+  background-color: #1c93a8;
+  border-radius: 100%;
+  display: inline;
+  padding: 6px 10px 9px;
+}
+
+.schedule > p {
+  font-family: monospace;
+  font-size: px;
+}
+
+.footer-notice {
+  margin-top: 224px;
+}
+
+/* MEDIA */
+
+@media only screen and (max-width: 600px) {
+  /* HOMEPAGE */
+  #intro {
+    background-image: url(images/vbg2.webp);
+    padding: 0 10px;
+  }
+
+  .menus {
+    height: 80vh;
+  }
+
+  .menus ul {
+    font-size: 20px;
+  }
+  .line {
+    width: initial;
+    margin-right: 0;
+  }
+
+  #intro .sns {
+    gap: 15px;
+  }
+
+  .bottom-content {
+    display: block;
+  }
+
+  .bottom-content .social-networks {
+    margin-bottom: 20px;
+  }
+
+  .footer .sns {
+    margin-top: 200px;
+  }
+
+  /* PROFILE */
+
+  #profile {
+    padding: 0;
+  }
+
+  #profile .header {
+    /* padding: 0 53px; */
+    padding: 0;
+  }
+
+  #profile .main-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 25px;
+    gap: 20px;
+  }
+
+  .navbar-pro > .container-fluid {
+    padding: 0 18px;
+  }
+
+  .girl-list {
+    text-align: center;
+    width: inherit;
+  }
+
+  .artist-image {
+    width: 200px;
+    height: 268px;
+  }
+
+  #artistImage {
+    top: 20px;
+    left: 20px;
+  }
+
+  .profile {
+    margin-left: 0;
+  }
+
+  .profile ul {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .profile li {
+    text-align: center;
+  }
+
+  .profile #artistName {
+    margin-left: 0;
+  }
+
+  .footer-profile {
+    left: 20px;
+  }
+
+  /* DISCOGRAPHY */
+  #disco {
+    padding: 0 10px;
+  }
+
+  .discography {
+    font-size: 30pt;
+  }
+
+  .album {
+    padding: 0;
+    grid-template-columns: auto;
+  }
+
+  .footer-discography {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* GALLERY */
+  #Gallery {
+    padding: 0 20px;
+  }
+
+  .footer-gallery {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* VIDEO */
+
+  #Video {
+    padding: 0 10px;
+  }
+  iframe {
+    height: 30vh;
+  }
+
+  .footer-video {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 205px;
+  }
+
+  .menu .header {
+    padding: 0 24px;
+  }
+
+  /* SCHEDULE */
+  #Schedule {
+    padding: 0 10px;
+  }
+
+  .schedule-container {
+    flex-direction: column;
+  }
+
+  .schedule {
+    width: 100%;
+  }
+
+  .schedule h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .notice-table {
+    padding: 0;
+  }
+
+  .calendar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .month,
+  .days {
+    font-size: 8px;
+  }
+  .days {
+    margin-bottom: 20px;
+  }
+  .top-line {
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer-notice {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
