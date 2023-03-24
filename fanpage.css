@@ -602,6 +602,7 @@ iframe {
 
   .profile {
     margin-left: 0;
+    display: inline-table;
   }
 
   .profile ul {
