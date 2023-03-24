@@ -275,6 +275,13 @@ ul {
   height: 80%;
 }
 
+.album-cover p {
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+  font-family: "Montserrat";
+}
+
 .footer-discography {
   display: flex;
   justify-content: space-between;
